@@ -195,7 +195,7 @@ span{
   border: 1.5px solid transparent;
 }
 .panel-deals:hover{
-  border: 1.5px solid white;         /* hover effect on deals too */
+  border: 1.5px solid white;         
   border-radius: 2px;
 }
 
@@ -216,8 +216,8 @@ span{
 }
 
 .box {
-  height: auto;                /* auto so height adjusts */
-  width: 23%;                  /* 4 boxes per row */
+  height: auto;                
+  width: 23%;                  
   background-color: white;
   padding: 20px 15px;
   margin-top: 0.85rem;
@@ -585,4 +585,7 @@ ul a:hover{
   font-size: 0.75rem;
   text-align: center;
   padding: 5px;
+}
+body {
+  overflow-x: hidden;
 }
