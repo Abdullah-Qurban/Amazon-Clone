@@ -25,42 +25,44 @@ img{
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(Amazon-logo.png);
-  margin: auto;
 }
 .border{
-  border: 1.5px solid transparent ;
+  border: 1px solid transparent ;
 }
 .border:hover{
-  border: 1.5px solid white;
+  border: 1px solid white;
   border-radius: 2px;
 }
 /* box2 */
 .nav-address{
   padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .add-first{
   color: #CCCCCC;
-  font-size: 0.85rem;
-  margin-left: 15px;
+  font-size: 0.80rem;
   cursor: pointer;
 }
 .add-second{
   color: white;
-  font-size: 1rem;
-  margin-left: 3px;
+  font-size: .90rem;
+  font-weight: 600;
   cursor: pointer;
 }
 .add-icon{
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 /* box 3 */
 .nav-search{
   display: flex;
   justify-content: space-evenly;
   background-color: #0f1111FF;
-  width: 620px;
-  height: 40px;
+  width: 50%;
+  height: 45px;
   border: 3px solid transparent;
   border-radius: 4px;
 }
@@ -71,7 +73,7 @@ img{
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   border: none;
-  color: #848688;
+  color: #4b4b4b;
   font-size: 12px;
   font-weight: 500;
 }
@@ -82,6 +84,12 @@ img{
   width: 100%;
   font-size: 1rem;
   border: none;
+  outline: none;
+}
+.search-input::placeholder{
+  font-size: .90rem;
+  font-weight: 500;
+  display: flex;
 }
 .search-icon{
   width: 45px;
@@ -96,16 +104,14 @@ img{
 }
 .nav-search:hover{
   border: 3px solid orange;
+  border-radius: 8px;
 }
 /* box */
 .nav-flag{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 50px;
-  padding: 8px 7px;
-  padding-bottom: 5px;
-  margin:0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .nav-flag img{
@@ -123,8 +129,6 @@ img{
   background: transparent;
   color: white;
   border: none;
-  position: relative;
-  right: 3px;
   font-weight: 700;
 }
 .nav-return{
@@ -160,6 +164,7 @@ span{
   color: white;
   justify-content: flex-start;
   align-items: center;
+  gap: 5px;
 }
 .panel-all{
   display: flex;
@@ -168,18 +173,18 @@ span{
 .panel-all i{
   font-size: 1.2rem;
 }
+.panel-ops{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .panel-ops-p{
-  display: inline-block;
-  padding: 0px 5px;
-}
-.panel-ops-p p{
-  margin: 5px 0 6px 0;
-  padding: 8px 5px;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   cursor: pointer;
+  padding: 10px;
 }
-.panel-ops-p p:hover{
-  border: 1.5px solid white;
+.panel-ops-p:hover{
+  border: 1px solid white;
   border-radius: 2px;
 }
 .panel-ops{
@@ -279,12 +284,12 @@ span{
 
 /* big-box image */
 .big-box{
-  margin: 20px;
+  margin-top: 20px;
   height: 260px;
   padding: 10px 20px;
   background-color: white;
   width: 100%;
-/*   max-width: 1200px; */
+  max-width: 1200px;
   overflow: hidden;
 }
 .big-box p{
@@ -503,8 +508,8 @@ ul a:hover{
   background-color: #131a22FF;
   height: 390px;
   width: 100%;  
-/*   max-width: 1270px;  */
-/*   margin: 0 auto;     */
+  max-width: 1270px; 
+  margin: 0 auto;    
   padding: 30px 0px;
 }
 .foot-4-inner{
@@ -584,5 +589,4 @@ ul a:hover{
 }
 body{
   overflow-x: hidden;
-
 }
